@@ -15,7 +15,10 @@ A new flutter plugin project.
   s.source_files = 'Classes/**/*'
   s.public_header_files = 'Classes/**/*.h'
   s.dependency 'Flutter'
-  s.dependency 'AppAuth', '1.2.0'
+  s.dependency 'AppAuth'
   s.ios.deployment_target = '8.0'
+  s.subspec 'AppAuth' do |ss|
+        ss.source    = { :git => 'https://github.com/lucasronchetti/AppAuth-iOS.git'}
+    end
 end
 
