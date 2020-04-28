@@ -17,5 +17,8 @@ A new flutter plugin project.
   s.dependency 'Flutter'
   s.dependency 'AppAuth'
   s.ios.deployment_target = '8.0'
+  s.subspec 'AppAuth' do |ss|
+        ss.source    = { :git => 'https://github.com/lucasronchetti/AppAuth-iOS.git'}
+    end
 end
 
